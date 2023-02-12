@@ -1,0 +1,37 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .section-title.hero-title {
+    max-width: 319px;
+    font-size: 36px;
+  }
+  .hero-overlay {
+    background-image: var(--gradient), url(../images/dark-bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: var(--gradient), url(../images/dark-bg-tab-2x.jpg);
+    }
+  }
+  .mob-menu [href^='tel'] {
+    font-size: 36px;
+  }
+  .mob-menu-social-list {
+    display: flex;
+  }
+  .mob-menu-social-item:not(:last-child) {
+    margin-right: 56px;
+  }
+
+  /* PORTFOLIO */
+
+  /* Gallery */
+
+  .filter {
+    width: 268px;
+  }
+  .filter-btn {
+    padding: 8px 16px;
+  }
+}
