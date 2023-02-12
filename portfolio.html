@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desctop.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -46,6 +49,78 @@
             </li>
           </ul>
         </address>
+        <!-- Mobile Menu -->
+        <button type="button" class="burger-menu" data-mobile-open>
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-mobile>
+        <div class="mob-menu-container">
+          <div>
+            <button type="button" class="mob-close-btn" data-mobile-close>
+              <svg class="mob-close-btn-icon">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="list mob-menu-list">
+                <li class="list-item mob-menu-item">
+                  <a class="link mob-menu-link" href="./index.html">Studio</a>
+                </li>
+                <li class="list-item mob-menu-item">
+                  <a class="link mob-menu-link current" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="list-item mob-menu-item">
+                  <a class="link mob-menu-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="address">
+              <ul class="list mob-menu-address-list">
+                <li class="list-item mob-menu-address-item">
+                  <a class="link mob-menu-address-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="list-item mob-menu-address-item">
+                  <a class="link mob-menu-address-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-menu-social-list">
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Instagram">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Twitter">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Facebook">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Linkedin">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -70,11 +145,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/banking-app.jpg    1x,
+                          ./images/portfolio-desk/banking-app-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/banking-app-tab.jpg    1x,
+                          ./images/portfolio-tab/banking-app-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/banking-app-mob.jpg    1x,
+                          ./images/portfolio-mob/banking-app-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/banking-app.jpg"
+                      src="./images/portfolio-desk/banking-app.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -92,11 +189,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/cashless-payment.jpg    1x,
+                          ./images/portfolio-desk/cashless-payment-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/cashless-payment-tab.jpg    1x,
+                          ./images/portfolio-tab/cashless-payment-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/cashless-payment-mob.jpg    1x,
+                          ./images/portfolio-mob/cashless-payment-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/cashless-payment.jpg"
+                      src="./images/portfolio-desk/cashless-payment.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -114,11 +233,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/meditaion-app.jpg    1x,
+                          ./images/portfolio-desk/meditaion-app-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/meditaion-app-tab.jpg    1x,
+                          ./images/portfolio-tab/meditaion-app-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/meditaion-app-mob.jpg    1x,
+                          ./images/portfolio-mob/meditaion-app-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/meditaion-app.jpg"
+                      src="./images/portfolio-desk/meditaion-app.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -136,11 +277,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/taxi-service.jpg    1x,
+                          ./images/portfolio-desk/taxi-service-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/taxi-service-tab.jpg    1x,
+                          ./images/portfolio-tab/taxi-service-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/taxi-service-mob.jpg    1x,
+                          ./images/portfolio-mob/taxi-service-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/taxi-service.jpg"
+                      src="./images/portfolio-desk/taxi-service.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -158,11 +321,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/screen-illustrations.jpg    1x,
+                          ./images/portfolio-desk/screen-illustrations-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/screen-illustrations-tab.jpg    1x,
+                          ./images/portfolio-tab/screen-illustrations-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/screen-illustrations-mob.jpg    1x,
+                          ./images/portfolio-mob/screen-illustrations-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/screen-illustrations.jpg"
+                      src="./images/portfolio-desk/screen-illustrations.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -180,11 +365,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/online-courses.jpg    1x,
+                          ./images/portfolio-desk/online-courses-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/online-courses-tab.jpg    1x,
+                          ./images/portfolio-tab/online-courses-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/online-courses-mob.jpg    1x,
+                          ./images/portfolio-mob/online-courses-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/online-courses.jpg"
+                      src="./images/portfolio-desk/online-courses.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -202,11 +409,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/instagram-stories-concept.jpg    1x,
+                          ./images/portfolio-desk/instagram-stories-concept-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/instagram-stories-concept-tab.jpg    1x,
+                          ./images/portfolio-tab/instagram-stories-concept-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/instagram-stories-concept-mob.jpg    1x,
+                          ./images/portfolio-mob/instagram-stories-concept-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/instagram-stories-concept.jpg"
+                      src="./images/portfolio-desk/instagram-stories-concept.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -224,11 +453,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/organic-food.jpg    1x,
+                          ./images/portfolio-desk/organic-food-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/organic-food-tab.jpg    1x,
+                          ./images/portfolio-tab/organic-food-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/organic-food-mob.jpg    1x,
+                          ./images/portfolio-mob/organic-food-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/organic-food.jpg"
+                      src="./images/portfolio-desk/organic-food.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -246,11 +497,33 @@
               <a href="#" class="link gallery-link">
                 <article class="card">
                   <div class="card-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio-desk/fresh-coffee.jpg    1x,
+                          ./images/portfolio-desk/fresh-coffee-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-tab/fresh-coffee-tab.jpg    1x,
+                          ./images/portfolio-tab/fresh-coffee-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio-mob/fresh-coffee-mob.jpg    1x,
+                          ./images/portfolio-mob/fresh-coffee-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                    </picture>
                     <img
-                      src="./images/fresh-coffee.jpg"
+                      src="./images/portfolio-desk/fresh-coffee.jpg"
                       alt="Examples of work"
-                      width="360"
-                      height="300"
+                      width="396"
                     />
                     <p class="card-thumb-overlay">
                       14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
@@ -268,58 +541,58 @@
         </div>
       </section>
     </main>
-
     <!-- FOOTER -->
-
     <footer class="footer">
       <div class="container footer-content">
-        <div class="footer-info">
-          <a class="logo footer-logo" href="./index.html">
-            <span class="logo-accent">Web</span>Studio</a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with digital marketing &
-            growth solutions.
-          </p>
+        <div class="footer-content-wrapper">
+          <div class="footer-content-item footer-info">
+            <a class="logo footer-logo" href="./index.html">
+              <span class="footer-social-title logo-accent">Web</span>Studio</a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with digital marketing &
+              growth solutions.
+            </p>
+          </div>
+          <div class="footer-content-item footer-social">
+            <h3 class="footer-social-title">Social media</h3>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Instagram">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Twitter">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-twitter-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Facebook">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Linkedin">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social">
-          <h3 class="footer-social-title">Social media</h3>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link" aria-label="Instagram">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons.svg#icon-instagram-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link" aria-label="Twitter">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons.svg#icon-twitter-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link" aria-label="Facebook">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons.svg#icon-facebook-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link" aria-label="Linkedin">
-                <svg class="footer-social-icon">
-                  <use href="./images/icons.svg#icon-linkedin-footer"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="footer-form">
+        <form class="footer-content-item footer-form">
           <h3 class="footer-social-title">Subscribe</h3>
           <span class="footer-form-wrapper">
-            <label>
-              <input
+            <label
+              ><input
                 type="email"
                 name="footer_email"
                 placeholder="E-mail"
@@ -335,5 +608,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
