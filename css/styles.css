@@ -474,7 +474,7 @@ ol {
 }
 
 @media screen and (max-width: 767px) {
-  .footer-content-item:not(:last-child) {
+  .footer-content-wrapper .footer-content-item {
     margin-bottom: 72px;
   }
 }
