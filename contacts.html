@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
+          <ul class="list nav-list">
+            <li class="list-item nav-item">
+              <a class="link nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="list-item nav-item">
+              <a class="link nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="list-item nav-item">
+              <a class="link nav-link current" href="./contacts.html"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="list address-list">
+            <li class="list-item address-item">
+              <a class="link address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="list-item address-item">
+              <a class="link address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-- Mobile Menu -->
+        <button type="button" class="burger-menu" data-mobile-open>
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-mobile>
+        <div class="mob-menu-container">
+          <div>
+            <button type="button" class="mob-close-btn" data-mobile-close>
+              <svg class="mob-close-btn-icon">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="list mob-menu-list">
+                <li class="list-item mob-menu-item">
+                  <a class="link mob-menu-link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="list-item mob-menu-item">
+                  <a class="link mob-menu-link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="list-item mob-menu-item">
+                  <a class="link mob-menu-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="address">
+              <ul class="list mob-menu-address-list">
+                <li class="list-item mob-menu-address-item">
+                  <a class="link mob-menu-address-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="list-item mob-menu-address-item">
+                  <a
+                    class="link mob-menu-address-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-menu-social-list">
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Instagram">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Twitter">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Facebook">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="#" class="mob-menu-social-link" aria-label="Linkedin">
+                  <svg class="mob-menu-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="visually-hidden">Contacts</h1>
+          <div class="wrapper">
+            <ul class="list">
+              <li>
+                <h2 class="contacts-title">Visit us:</h2>
+                <p class="contacts-text">Finnsnes 9300, Norway</p>
+              </li>
+              <li>
+                <h2 class="contacts-title">Call us:</h2>
+                <p class="contacts-text">
+                  <a class="link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </p>
+              </li>
+              <li>
+                <h2 class="contacts-title">Email us:</h2>
+                <p class="contacts-text">
+                  <a class="link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </p>
+              </li>
+            </ul>
+            <picture>
+              <source
+                srcset="
+                  ./images/contacts/office-building-desktop-1x.jpg 1x,
+                  ./images/contacts/office-building-desktop-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/contacts/office-building-tablet-1x.jpg 1x,
+                  ./images/contacts/office-building-tablet-2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/contacts/office-building-mobile-1x.jpg 1x,
+                  ./images/contacts/office-building-mobile-2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+
+              <img
+                src="./images/contacts/office-building-desktop-1x.jpg"
+                alt="Our office"
+                width="600"
+                height="450"
+              />
+            </picture>
+          </div>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45262.953577470355!2d17.94831848874128!3d69.2360183175449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45db46f390c68fd9%3A0x6cfbfb4e6aad3dd8!2s9300%20Finnsnes!5e0!3m2!1sen!2sno!4v1739311331895!5m2!1sen!2sno"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-content-wrapper">
+          <div class="footer-content-item footer-info">
+            <a class="logo footer-logo" href="./index.html">
+              <span class="footer-social-title logo-accent">Web</span>Studio</a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-content-item footer-social">
+            <h3 class="footer-social-title">Social media</h3>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Instagram">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Twitter">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-twitter-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Facebook">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link" aria-label="Linkedin">
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="footer-content-item footer-form">
+          <h3 class="footer-social-title">Subscribe</h3>
+          <span class="footer-form-wrapper">
+            <label
+              ><input
+                type="email"
+                name="footer_email"
+                placeholder="E-mail"
+                class="footer-form-input"
+            /></label>
+            <span class="footer-form-btn-wrapper">
+              <button type="submit" class="footer-form-btn btn">
+                Subscribe
+              </button>
+              <svg class="footer-form-icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </span>
+          </span>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
