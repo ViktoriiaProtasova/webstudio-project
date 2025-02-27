@@ -26,7 +26,6 @@ body {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -1042,16 +1041,10 @@ ol {
   margin-bottom: 40px;
 }
 
-.wrapper {
+.contacts-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 72px;
-}
-
-picture {
-  width: 740px;
-  height: 480px;
 }
 
 .contacts-title {
@@ -1078,6 +1071,11 @@ picture {
 
 .contacts .link:is(:hover, :focus) {
   color: var(--primary-brand-color);
+}
+
+picture {
+  width: 740px;
+  height: 480px;
 }
 
 .map {

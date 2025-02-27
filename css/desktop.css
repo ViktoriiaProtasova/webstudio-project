@@ -202,4 +202,9 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  picture {
+    width: 740px;
+    height: 480px;
+  }
 }

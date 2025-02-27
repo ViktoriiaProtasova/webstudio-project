@@ -9,7 +9,9 @@
   .hero-overlay {
     background-image: var(--gradient), url(../images/dark-bg-tab.jpg);
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-overlay {
       background-image: var(--gradient), url(../images/dark-bg-tab-2x.jpg);
     }
@@ -33,5 +35,21 @@
   }
   .filter-btn {
     padding: 8px 16px;
+  }
+
+  /* Contacts */
+
+  .contacts {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .contacts-wrapper {
+    margin-bottom: 64px;
+  }
+
+  picture {
+    width: 150px;
+    height: 200px;
   }
 }

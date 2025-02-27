@@ -230,22 +230,20 @@
   .gallery-list > .list-item {
     flex-basis: calc((100% - 24px) / 2);
   }
-}
 
-/* Contacts */
+  /* Contacts */
 
-.contacts {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
+  .contacts {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 
-.contacts .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 64px;
-}
+  .contacts-wrapper {
+    margin-bottom: 64px;
+  }
 
-.contacts img {
-  margin: 0;
+  picture {
+    width: 440px;
+    height: 280px;
+  }
 }
